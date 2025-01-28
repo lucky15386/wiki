@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文学部</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>文学部</h1>
+        <nav>
+            <ul>
+                <li><a href="#干员档案">干员档案</a></li>
+                <li><a href="#游戏涉猎">游戏涉猎</a></li>
+                <li><a href="#文学作品">文学作品</a></li>
+                <li><a href="#团建记录">团建记录</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search">
+            <input type="text" placeholder="搜索..." />
+            <button><i class="fas fa-search"></i></button>
+        </section>
+
+        <section id="干员档案" class="card-section">
+            <h2>干员档案</h2>
+            <button id="add-agent" class="action-btn">添加干员</button>
+            <div class="card" contenteditable="true">干员1 <button class="edit-btn">保存</button> <button class="delete-btn">删除</button></div>
+            <input type="file" accept="image/*,video/*" class="upload-media" />
+            <div class="comments">
+                <h3>评论区</h3>
+                <textarea placeholder="添加评论..."></textarea>
+                <button class="submit-comment">提交</button>
+                <div class="comment-list"></div>
+            </div>
+        </section>
+
+        <section id="游戏涉猎" class="card-section">
+            <h2>游戏涉猎</h2>
+            <button id="add-game" class="action-btn">添加游戏</button>
+            <div class="card" contenteditable="true">游戏1 <button class="edit-btn">保存</button> <button class="delete-btn">删除</button></div>
+            <input type="file" accept="image/*,video/*" class="upload-media" />
+            <div class="comments">
+                <h3>评论区</h3>
+                <textarea placeholder="添加评论..."></textarea>
+                <button class="submit-comment">提交</button>
+                <div class="comment-list"></div>
+            </div>
+        </section>
+
+        <section id="文学作品" class="card-section">
+            <h2>文学作品</h2>
+            <button id="add-work" class="action-btn">添加作品</button>
+            <div class="card" contenteditable="true">作品1 <button class="edit-btn">保存</button> <button class="delete-btn">删除</button></div>
+            <input type="file" accept="image/*,video/*" class="upload-media" />
+            <div class="comments">
+                <h3>评论区</h3>
+                <textarea placeholder="添加评论..."></textarea>
+                <button class="submit-comment">提交</button>
+                <div class="comment-list"></div>
+            </div>
+        </section>
+
+        <section id="团建记录" class="card-section">
+            <h2>团建记录</h2>
+            <button id="add-event" class="action-btn">添加记录</button>
+            <div class="card" contenteditable="true">记录1 <button class="edit-btn">保存</button> <button class="delete-btn">删除</button></div>
+            <input type="file" accept="image/*,video/*" class="upload-media" />
+            <div class="comments">
+                <h3>评论区</h3>
+                <textarea placeholder="添加评论..."></textarea>
+                <button class="submit-comment">提交</button>
+                <div class="comment-list"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 文学部. 保留所有权利。</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
